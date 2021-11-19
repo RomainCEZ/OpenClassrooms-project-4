@@ -1,4 +1,1 @@
-User-agent: Semrush-Bot
-Disallow:
-
-Sitemap: http://https://romaincez.github.io/OpenClassrooms-project-4/sitemap.xml
+Sitemap: https://romaincez.github.io/OpenClassrooms-project-4/sitemap.xml
