@@ -1,8 +1,128 @@
 :root {
-    --color-orange: #C7511A;
+    --color-orange: #C7511A; /* tangerine color for background, text-shadow, outline */
 }
 
-/***************************************************  BOOTSTRAP  ***************************************************/
+/***Index***
+**
+**  1/ ET-LINE  
+**  2/ FONT AWESOME
+**  3/ BOOTSTRAP
+**
+**  4/ GENERAL CSS
+**  5/ min-width 768px
+**  6/ min-width 992px
+*/
+
+/**********************************************************************************************
+**************************************  1/ ET-LINE  *******************************************
+**********************************************************************************************/
+
+@font-face {
+    font-family: et-line;
+    src: url(./fonts/et-line.eot);
+    src: url(./fonts/et-line.eot?#iefix) format('embedded-opentype'),
+         url(./fonts/et-line.woff) format('woff'),
+         url(./fonts/et-line.ttf) format('truetype'),
+         url(./fonts/et-line.svg#et-line) format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.et-icon-adjustments,.et-icon-alarmclock,.et-icon-anchor,.et-icon-aperture,.et-icon-attachment,.et-icon-bargraph,.et-icon-basket,.et-icon-beaker,.et-icon-bike,.et-icon-book-open,.et-icon-briefcase,.et-icon-browser,.et-icon-calendar,.et-icon-camera,.et-icon-caution,.et-icon-chat,.et-icon-circle-compass,.et-icon-clipboard,.et-icon-clock,.et-icon-cloud,.et-icon-compass,.et-icon-desktop,.et-icon-dial,.et-icon-document,.et-icon-documents,.et-icon-download,.et-icon-dribbble,.et-icon-edit,.et-icon-envelope,.et-icon-expand,.et-icon-facebook,.et-icon-flag,.et-icon-focus,.et-icon-gears,.et-icon-genius,.et-icon-gift,.et-icon-global,.et-icon-globe,.et-icon-googleplus,.et-icon-grid,.et-icon-happy,.et-icon-hazardous,.et-icon-heart,.et-icon-hotairballoon,.et-icon-hourglass,.et-icon-key,.et-icon-laptop,.et-icon-layers,.et-icon-lifesaver,.et-icon-lightbulb,.et-icon-linegraph,.et-icon-linkedin,.et-icon-lock,.et-icon-magnifying-glass,.et-icon-map,.et-icon-map-pin,.et-icon-megaphone,.et-icon-mic,.et-icon-mobile,.et-icon-newspaper,.et-icon-notebook,.et-icon-paintbrush,.et-icon-paperclip,.et-icon-pencil,.et-icon-phone,.et-icon-picture,.et-icon-pictures,.et-icon-piechart,.et-icon-presentation,.et-icon-pricetags,.et-icon-printer,.et-icon-profile-female,.et-icon-profile-male,.et-icon-puzzle,.et-icon-quote,.et-icon-recycle,.et-icon-refresh,.et-icon-ribbon,.et-icon-rss,.et-icon-sad,.et-icon-scissors,.et-icon-scope,.et-icon-search,.et-icon-shield,.et-icon-speedometer,.et-icon-strategy,.et-icon-streetsign,.et-icon-tablet,.et-icon-target,.et-icon-telescope,.et-icon-toolbox,.et-icon-tools,.et-icon-tools-2,.et-icon-trophy,.et-icon-tumblr,.et-icon-twitter,.et-icon-upload,.et-icon-video,.et-icon-wallet,.et-icon-wine {
+    font-family: et-line;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block
+}
+
+.et-icon-browser:before {
+    content: "\e00c"
+}
+
+.et-icon-presentation:before {
+    content: "\e00e"
+}
+
+.et-icon-edit:before {
+    content: "\e01c"
+}
+
+/*******************************************************************************************
+***********************************  2/ FONT AWESOME  **************************************
+*******************************************************************************************/
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('./fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('./fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+         url('./fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+         url('./fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+         url('./fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+         url('./fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa-twitter:before {
+    content: "\f099"
+}
+
+.fa-facebook-f:before,.fa-facebook:before {
+    content: "\f09a"
+}
+
+.fa-instagram:before {
+    content: "\f16d"
+}
+
+.fa-dribbble:before {
+    content: "\f17d"
+}
+
+.fa-chevron-left:before {
+    content: "\f053"
+}
+
+.fa-chevron-right:before {
+    content: "\f054"
+}
+
+.fa-chevron-up:before {
+    content: "\f077"
+}
+
+/*********************************************************************************************
+***************************************  3/ BOOTSTRAP  ***************************************
+*********************************************************************************************/
+
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 * {
     -webkit-box-sizing: border-box;
@@ -278,13 +398,6 @@ address {
     position: relative;
     min-height: 50px;
     margin-bottom: 20px;
-    border: 1px solid transparent
-}
-
-@media (min-width: 768px) {
-    .navbar {
-        border-radius:4px
-    }
 }
 
 @media (min-width: 768px) {
@@ -539,11 +652,9 @@ textarea.form-control {
     color: #737373
 }
 
-/*****************************************************************************************************************
-******************************************************************************************************************
-**********************************  BOOTSTRAP END  ***************************************************************
-******************************************************************************************************************
-*****************************************************************************************************************/
+/****************************************************************************************************************
+*******************************************  4/ GENERAL CSS  ****************************************************
+****************************************************************************************************************/
 
 html {
     scroll-behavior: smooth;
@@ -568,10 +679,6 @@ button {
     outline-offset: -2px
 }
 
-a:focus {
-    outline: none;
-}
-
 .container {
     width: 100%;
 }
@@ -580,6 +687,7 @@ a:focus {
     overflow-x: hidden;
     position: relative;
 }
+
 h1,
 h2,
 h3,
@@ -752,71 +860,6 @@ form {
     background: #FFFFFF;
 }
 
-.d-bloc .btn-wire:hover {
-    color: #FFFFFF;
-    outline: #FFFFFF;
-}
-
-.l-bloc .icon-round,
-.l-bloc .icon-square,
-.l-bloc .icon-rounded,
-.l-bloc .icon-semi-rounded-a,
-.l-bloc .icon-semi-rounded-b {
-    border-color: rgba(0, 0, 0, .7);
-}
-
-.l-bloc .a-btn,
-.l-bloc .navbar a,
-.l-bloc .navbar-brand,
-.l-bloc a .icon-sm,
-.l-bloc a .icon-md,
-.l-bloc a .icon-lg,
-.l-bloc a .icon-xl,
-.l-bloc h1 a,
-.l-bloc h2 a,
-.l-bloc h3 a,
-.l-bloc h4 a,
-.l-bloc h5 a,
-.l-bloc h6 a,
-.l-bloc p a {
-    color: rgba(0, 0, 0, .6);
-}
-
-.d-bloc .panel .a-btn:hover,
-.l-bloc .a-btn:hover,
-.l-bloc .navbar a:hover,
-.l-bloc .navbar-brand:hover,
-.l-bloc a:hover .icon-sm,
-.l-bloc a:hover .icon-md,
-.l-bloc a:hover .icon-lg,
-.l-bloc a:hover .icon-xl,
-.l-bloc h1 a:hover,
-.l-bloc h2 a:hover,
-.l-bloc h3 a:hover,
-.l-bloc h4 a:hover,
-.l-bloc h5 a:hover,
-.l-bloc h6 a:hover,
-.l-bloc p a:hover {
-    color: rgba(0, 0, 0, 1);
-}
-
-.l-bloc .navbar-toggle .icon-bar {
-    color: rgba(0, 0, 0, .6);
-}
-
-
-
-.row-no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.row.row-no-gutters > [class^="col-"],
-.row.row-no-gutters > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
-}
-
 #bloc-1-hero h1 {
     font-size: 32px;
 }
@@ -826,15 +869,11 @@ form {
     z-index: 1;
 }
 
-
-
 .navbar-brand img {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
 }
-
-
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
@@ -862,10 +901,6 @@ form {
 
 .btn {
     margin: 0 5px 5px 0;
-}
-
-.btn.pull-right {
-    margin: 0 0 5px 5px;
 }
 
 .btn-d,
@@ -1070,20 +1105,6 @@ a {
     font-size: 38px;
 }
 
-.hero-bloc-text-sub {
-    font-size: 36px;
-}
-
-.statement-bloc-text {
-    line-height: 26px;
-    font-style: italic;
-    font-size: 20px;
-    text-align: center;
-    font-weight: lighter;
-    max-width: 520px;
-    margin: auto auto auto auto;
-}
-
 p {
     font-size: 14px;
 }
@@ -1091,11 +1112,6 @@ p {
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
-}
-
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
 }
 
 .cta-hero {
@@ -1129,20 +1145,6 @@ h3 {
     color: #333333!important;
 }
 
-.med-width-whitespace {
-    max-width: 800px;
-    margin: auto auto auto auto;
-    box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-    color: #333333!important;
-}
-
-h4 {
-    color: #333333!important;
-}
-
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -1162,18 +1164,9 @@ h4 {
     margin-top: 50px;
 }
 
-.avatar {
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
-}
-
 .black-background {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px 0;
-}
-
-.bold-link {
-    font-weight: 900;
-    text-decoration: underline!important;
 }
 
 .bgc-white {
@@ -1203,22 +1196,6 @@ h4 {
     background: #c27956!important;
     color: #FFFFFF!important;
     outline: 2px solid #FFFFFF;
-}
-
-.ltc-white {
-    color: #FFFFFF!important;
-}
-
-.ltc-white:hover {
-    color: #cccccc!important;
-}
-
-.ltc-atomic-tangerine {
-    color: var(--color-orange)!important;
-}
-
-.ltc-atomic-tangerine:hover {
-    color: #c27956!important;
 }
 
 .icon-dark-slate-blue {
@@ -1285,6 +1262,10 @@ address:before {
     top: 0;
 }
 
+/*********************************************************************************************
+***************************************  5/ min-width 768px  *********************************
+*********************************************************************************************/
+
 @media (min-width: 768px) {
     h1,
     h2,
@@ -1336,7 +1317,7 @@ address:before {
     }
     
     .bloc-sm {
-        padding: 20px 50px;
+        padding: 20px 40px;
     }
     .col-sm-3 {
         width: 25%;
@@ -1356,6 +1337,10 @@ address:before {
     }
 }
 
+/*********************************************************************************************
+***************************************  6/ min-width 992px  *********************************
+*********************************************************************************************/
+
 @media (min-width: 992px) {
 
     .bloc {
@@ -1367,98 +1352,4 @@ address:before {
     .b-parallax {
         background-attachment: fixed;
     }
-}
-
-/*******************************************************************************************
-**************************************  ET-LINE  *******************************************
-*******************************************************************************************/
-
-@font-face {
-    font-family: et-line;
-    src: url(./fonts/et-line.eot);
-    src: url(./fonts/et-line.eot?#iefix) format('embedded-opentype'),
-         url(./fonts/et-line.woff) format('woff'),
-         url(./fonts/et-line.ttf) format('truetype'),
-         url(./fonts/et-line.svg#et-line) format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-.et-icon-adjustments,.et-icon-alarmclock,.et-icon-anchor,.et-icon-aperture,.et-icon-attachment,.et-icon-bargraph,.et-icon-basket,.et-icon-beaker,.et-icon-bike,.et-icon-book-open,.et-icon-briefcase,.et-icon-browser,.et-icon-calendar,.et-icon-camera,.et-icon-caution,.et-icon-chat,.et-icon-circle-compass,.et-icon-clipboard,.et-icon-clock,.et-icon-cloud,.et-icon-compass,.et-icon-desktop,.et-icon-dial,.et-icon-document,.et-icon-documents,.et-icon-download,.et-icon-dribbble,.et-icon-edit,.et-icon-envelope,.et-icon-expand,.et-icon-facebook,.et-icon-flag,.et-icon-focus,.et-icon-gears,.et-icon-genius,.et-icon-gift,.et-icon-global,.et-icon-globe,.et-icon-googleplus,.et-icon-grid,.et-icon-happy,.et-icon-hazardous,.et-icon-heart,.et-icon-hotairballoon,.et-icon-hourglass,.et-icon-key,.et-icon-laptop,.et-icon-layers,.et-icon-lifesaver,.et-icon-lightbulb,.et-icon-linegraph,.et-icon-linkedin,.et-icon-lock,.et-icon-magnifying-glass,.et-icon-map,.et-icon-map-pin,.et-icon-megaphone,.et-icon-mic,.et-icon-mobile,.et-icon-newspaper,.et-icon-notebook,.et-icon-paintbrush,.et-icon-paperclip,.et-icon-pencil,.et-icon-phone,.et-icon-picture,.et-icon-pictures,.et-icon-piechart,.et-icon-presentation,.et-icon-pricetags,.et-icon-printer,.et-icon-profile-female,.et-icon-profile-male,.et-icon-puzzle,.et-icon-quote,.et-icon-recycle,.et-icon-refresh,.et-icon-ribbon,.et-icon-rss,.et-icon-sad,.et-icon-scissors,.et-icon-scope,.et-icon-search,.et-icon-shield,.et-icon-speedometer,.et-icon-strategy,.et-icon-streetsign,.et-icon-tablet,.et-icon-target,.et-icon-telescope,.et-icon-toolbox,.et-icon-tools,.et-icon-tools-2,.et-icon-trophy,.et-icon-tumblr,.et-icon-twitter,.et-icon-upload,.et-icon-video,.et-icon-wallet,.et-icon-wine {
-    font-family: et-line;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: inline-block
-}
-
-.et-icon-browser:before {
-    content: "\e00c"
-}
-
-.et-icon-presentation:before {
-    content: "\e00e"
-}
-
-.et-icon-edit:before {
-    content: "\e01c"
-}
-
-/*******************************************************************************************
-***********************************  FONT AWESOME  *****************************************
-*******************************************************************************************/
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('./fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('./fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
-         url('./fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
-         url('./fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
-         url('./fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
-         url('./fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap
-}
-
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
-}
-
-.fa-twitter:before {
-    content: "\f099"
-}
-
-.fa-facebook-f:before,.fa-facebook:before {
-    content: "\f09a"
-}
-
-.fa-instagram:before {
-    content: "\f16d"
-}
-
-.fa-dribbble:before {
-    content: "\f17d"
-}
-
-.fa-chevron-left:before {
-    content: "\f053"
-}
-
-.fa-chevron-right:before {
-    content: "\f054"
-}
-
-.fa-chevron-up:before {
-    content: "\f077"
 }
