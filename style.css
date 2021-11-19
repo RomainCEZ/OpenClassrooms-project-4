@@ -646,10 +646,10 @@ p,
     margin-top: 5px;
 }
 .voffset-md {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .voffset-lg {
-    margin-top: 30px;
+    margin-top: 55px;
 }
 form {
    padding: 5px;
@@ -1168,7 +1168,7 @@ h4 {
 
 .black-background {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 40px 40px 40px 40px;
+    padding: 40px 0;
 }
 
 .bold-link {
@@ -1323,6 +1323,10 @@ address:before {
         line-height: 44px;
     }
 
+    .black-background {
+        padding: 40px;
+    }
+
     .bloc-lg {
         padding: 100px 50px;
     }
@@ -1344,9 +1348,11 @@ address:before {
     .voffset {
         margin-top: 30px!important;
     }
-    
+    .voffset-md {
+        margin-top: 60px;
+    }
     .voffset-lg {
-        margin-top: 80px;
+        margin-top: 0px;
     }
 }
 
