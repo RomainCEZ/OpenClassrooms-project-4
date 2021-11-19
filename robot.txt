@@ -1,1 +1,4 @@
+User-agent: Semrush-Bot
+Disallow:
+
 Sitemap: http://www.example.com/sitemap.xml
